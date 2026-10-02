@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FLC 启动器</title>
+<meta name="description" content="FLC 启动器 — Minecraft 启动器。原版下载、加载器安装、Modrinth 资源、版本隔离，免安装绿色版。">
+<meta name="theme-color" content="#4CBB2F">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpath d='M50 4 92 28v44L50 96 8 72V28z' fill='%234CBB2F'/%3E%3Ctext x='50' y='68' font-size='54' font-family='sans-serif' font-weight='bold' fill='%23fff' text-anchor='middle'%3EF%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="assets/style.css">
+<script src="assets/app.js"></script>
+</head>
+<body>
+
+<div class="bg-grid" aria-hidden="true"></div>
+<div class="bg-glow" aria-hidden="true"></div>
+
+<header class="nav">
+  <div class="wrap nav__in">
+    <a class="brand" href="index.html">
+      <svg class="brand__mark" viewBox="0 0 100 100" aria-hidden="true">
+        <path d="M50 4 92 28v44L50 96 8 72V28z" fill="#4CBB2F"/>
+        <path d="M36 30h30v11H48v9h16v11H48v19H36z" fill="#fff"/>
+      </svg>
+      <span class="brand__txt"><span class="brand__name">FLC 启动器</span><span class="brand__ver">v2.1.0</span></span>
+    </a>
+    <ul class="nav__links" id="nav-links">
+      <li><a href="index.html" aria-current="page">首页</a></li>
+      <li><a href="features.html">功能</a></li>
+      <li><a href="download.html">下载</a></li>
+      <li><a href="resources.html">资源</a></li>
+      <li><a href="about.html">关于</a></li>
+      <li><a href="https://afdian.com/a/codexyu" target="_blank" rel="noopener noreferrer">支持一下</a></li>
+    </ul>
+    <div class="nav__tools">
+      <button class="iconbtn" type="button" data-theme-toggle title="切换主题">
+        <svg class="i-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2v2.4M12 19.6V22M2 12h2.4M19.6 12H22M5 5l1.7 1.7M17.3 17.3 19 19M19 5l-1.7 1.7M6.7 17.3 5 19"/></svg>
+        <svg class="i-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.5 14.3A8.6 8.6 0 0 1 9.7 3.5a8.6 8.6 0 1 0 10.8 10.8z"/></svg>
+      </button>
+      <button class="iconbtn nav__burger" type="button" data-burger aria-expanded="false" aria-controls="nav-links" aria-label="菜单">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<section class="hero">
+  <div class="wrap hero__in">
+    <div class="hero__copy">
+      <h1>Minecraft 启动器<br><span class="accent">一个窗口搞定</span></h1>
+      <p class="hero__sub">下载原版、装加载器、找模组、配 Java、切版本。免安装，解压即用。</p>
+      <div class="hero__cta">
+        <a class="btn btn--brand btn--lg" href="download.html">下载</a>
+        <a class="btn btn--ghost btn--lg" href="features.html">功能</a>
+      </div>
+      <p class="hero__sub" style="font-size:13px;opacity:.7;margin-top:14px">Windows 10 / 11 · 免费 · 绿色版</p>
+    </div>
+    <div class="hero__shot">
+      <figure class="shot">
+        <img src="assets/img/dark_play.png" width="1440" height="900" alt="FLC 启动器界面">
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section class="sect">
+  <div class="wrap">
+    <div class="grid g3">
+      <div class="card">
+        <h3>快</h3>
+        <p>32 线程并发下载，BMCLAPI 国内镜像，断点续传。</p>
+      </div>
+      <div class="card">
+        <h3>全</h3>
+        <p>Forge / Fabric / NeoForge / OptiFine / LiteLoader 一键装。</p>
+      </div>
+      <div class="card">
+        <h3>省</h3>
+        <p>Modrinth 资源站内搜索下载，自动落到对应目录。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sect sect--alt">
+  <div class="wrap">
+    <div class="pane__grid">
+      <figure class="shot">
+        <img src="assets/img/light_download.png" width="1440" height="900" alt="下载页" loading="lazy">
+      </figure>
+      <div>
+        <h2 class="h-sect">下载页</h2>
+        <p class="lead">正式版 / 快照版分类筛选，多选批量安装。实时显示速度、线程数和剩余时间。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <div class="foot__in">
+      <div class="foot__about">
+        <a class="brand" href="index.html" style="margin-bottom:14px">
+          <svg class="brand__mark" viewBox="0 0 100 100" aria-hidden="true">
+            <path d="M50 4 92 28v44L50 96 8 72V28z" fill="#4CBB2F"/>
+            <path d="M36 30h30v11H48v9h16v11H48v19H36z" fill="#fff"/>
+          </svg>
+          <span class="brand__txt"><span class="brand__name">FLC 启动器</span><span class="brand__ver">v2.1.0</span></span>
+        </a>
+        <p>Minecraft 启动器。</p>
+      </div>
+      <div>
+        <h4>导航</h4>
+        <ul>
+          <li><a href="features.html">功能</a></li>
+          <li><a href="download.html">下载</a></li>
+          <li><a href="resources.html">资源</a></li>
+          <li><a href="about.html">关于</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>相关</h4>
+        <ul>
+          <li><a href="https://modrinth.com" target="_blank" rel="noopener noreferrer">Modrinth</a></li>
+          <li><a href="https://bmclapi2.bangbang93.com" target="_blank" rel="noopener noreferrer">BMCLAPI</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot__legal">
+      <p>Minecraft 是 Mojang Studios 的商标，本程序与 Mojang 及微软无隶属关系。</p>
+      <p>© 2026 FLC Launcher</p>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
