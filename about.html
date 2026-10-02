@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>关于 · FLC 启动器</title>
+<meta name="description" content="FLC 启动器：基于 Python + Tkinter 的 Minecraft 启动器，免费开源。">
+<meta name="theme-color" content="#4CBB2F">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpath d='M50 4 92 28v44L50 96 8 72V28z' fill='%234CBB2F'/%3E%3Ctext x='50' y='68' font-size='54' font-family='sans-serif' font-weight='bold' fill='%23fff' text-anchor='middle'%3EF%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="assets/style.css">
+<script src="assets/app.js"></script>
+</head>
+<body>
+
+<div class="bg-grid" aria-hidden="true"></div>
+<div class="bg-glow" aria-hidden="true"></div>
+
+<header class="nav">
+  <div class="wrap nav__in">
+    <a class="brand" href="index.html">
+      <svg class="brand__mark" viewBox="0 0 100 100" aria-hidden="true">
+        <path d="M50 4 92 28v44L50 96 8 72V28z" fill="#4CBB2F"/>
+        <path d="M36 30h30v11H48v9h16v11H48v19H36z" fill="#fff"/>
+      </svg>
+      <span class="brand__txt"><span class="brand__name">FLC 启动器</span><span class="brand__ver">v2.1.0</span></span>
+    </a>
+    <ul class="nav__links" id="nav-links">
+      <li><a href="index.html">首页</a></li>
+      <li><a href="features.html">功能</a></li>
+      <li><a href="download.html">下载</a></li>
+      <li><a href="resources.html">资源</a></li>
+      <li><a href="about.html" aria-current="page">关于</a></li>
+    </ul>
+    <div class="nav__tools">
+      <button class="iconbtn" type="button" data-theme-toggle title="切换主题">
+        <svg class="i-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2v2.4M12 19.6V22M2 12h2.4M19.6 12H22M5 5l1.7 1.7M17.3 17.3 19 19M19 5l-1.7 1.7M6.7 17.3 5 19"/></svg>
+        <svg class="i-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.5 14.3A8.6 8.6 0 0 1 9.7 3.5a8.6 8.6 0 1 0 10.8 10.8z"/></svg>
+      </button>
+      <button class="iconbtn nav__burger" type="button" data-burger aria-expanded="false" aria-controls="nav-links" aria-label="菜单">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<section class="sect sect--tight" style="padding-bottom:0">
+  <div class="wrap" style="max-width:640px">
+    <h1 class="h-sect h-sect--free" style="font-size:clamp(28px,4vw,44px)">关于</h1>
+    <p class="lead">FLC 启动器是一个免费开源的 Minecraft 启动器。</p>
+  </div>
+</section>
+
+<section class="sect">
+  <div class="wrap" style="max-width:640px">
+    <div class="card">
+      <h3 class="bar-title">技术</h3>
+      <p>Python + Tkinter 编写，界面纯代码绘制（无边框窗口、自绘控件），不使用图片素材。PyInstaller 打包为绿色版。</p>
+    </div>
+
+    <div class="card" style="margin-top:16px">
+      <h3 class="bar-title">致谢</h3>
+      <ul style="line-height:2;padding-left:18px">
+        <li><a href="https://bmclapi2.bangbang93.com" target="_blank" rel="noopener noreferrer">BMCLAPI</a> — 国内下载镜像</li>
+        <li><a href="https://modrinth.com" target="_blank" rel="noopener noreferrer">Modrinth</a> — 资源数据</li>
+        <li><a href="https://fabricmc.net" target="_blank" rel="noopener noreferrer">Fabric MC</a></li>
+        <li><a href="https://adoptium.net" target="_blank" rel="noopener noreferrer">Eclipse Adoptium</a> — Java 运行时</li>
+        <li>PCL2 — 启动流程参考</li>
+      </ul>
+    </div>
+
+    <div class="card" style="margin-top:16px">
+      <h3 class="bar-title">常见问题</h3>
+      <div style="line-height:1.9">
+        <p><strong>Q：支持 Linux / macOS 吗？</strong><br>A：目前仅 Windows。</p>
+        <p><strong>Q：会被盗号吗？</strong><br>A：微软登录走官方设备代码流程，令牌只保存在本地配置文件。</p>
+        <p><strong>Q：报毒怎么办？</strong><br>A：PyInstaller 打包的程序偶有误报，添加信任即可。源码可自行审计。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <div class="foot__in">
+      <div class="foot__about">
+        <a class="brand" href="index.html" style="margin-bottom:14px">
+          <svg class="brand__mark" viewBox="0 0 100 100" aria-hidden="true">
+            <path d="M50 4 92 28v44L50 96 8 72V28z" fill="#4CBB2F"/>
+            <path d="M36 30h30v11H48v9h16v11H48v19H36z" fill="#fff"/>
+          </svg>
+          <span class="brand__txt"><span class="brand__name">FLC 启动器</span><span class="brand__ver">v2.1.0</span></span>
+        </a>
+        <p>Minecraft 启动器。</p>
+      </div>
+      <div>
+        <h4>导航</h4>
+        <ul>
+          <li><a href="index.html">首页</a></li>
+          <li><a href="features.html">功能</a></li>
+          <li><a href="download.html">下载</a></li>
+          <li><a href="resources.html">资源</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>相关</h4>
+        <ul>
+          <li><a href="https://modrinth.com" target="_blank" rel="noopener noreferrer">Modrinth</a></li>
+          <li><a href="https://bmclapi2.bangbang93.com" target="_blank" rel="noopener noreferrer">BMCLAPI</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot__legal">
+      <p>Minecraft 是 Mojang Studios 的商标，本程序与 Mojang 及微软无隶属关系。</p>
+      <p>© 2026 FLC Launcher</p>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

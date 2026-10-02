@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>资源中心 · FLC 启动器</title>
+<meta name="description" content="FLC 启动器资源中心：Modrinth 模组、光影、材质包搜索下载，自动归位。">
+<meta name="theme-color" content="#4CBB2F">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpath d='M50 4 92 28v44L50 96 8 72V28z' fill='%234CBB2F'/%3E%3Ctext x='50' y='68' font-size='54' font-family='sans-serif' font-weight='bold' fill='%23fff' text-anchor='middle'%3EF%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="assets/style.css">
+<script src="assets/app.js"></script>
+</head>
+<body>
+
+<div class="bg-grid" aria-hidden="true"></div>
+<div class="bg-glow" aria-hidden="true"></div>
+
+<header class="nav">
+  <div class="wrap nav__in">
+    <a class="brand" href="index.html">
+      <svg class="brand__mark" viewBox="0 0 100 100" aria-hidden="true">
+        <path d="M50 4 92 28v44L50 96 8 72V28z" fill="#4CBB2F"/>
+        <path d="M36 30h30v11H48v9h16v11H48v19H36z" fill="#fff"/>
+      </svg>
+      <span class="brand__txt"><span class="brand__name">FLC 启动器</span><span class="brand__ver">v2.1.0</span></span>
+    </a>
+    <ul class="nav__links" id="nav-links">
+      <li><a href="index.html">首页</a></li>
+      <li><a href="features.html">功能</a></li>
+      <li><a href="download.html">下载</a></li>
+      <li><a href="resources.html" aria-current="page">资源</a></li>
+      <li><a href="about.html">关于</a></li>
+    </ul>
+    <div class="nav__tools">
+      <button class="iconbtn" type="button" data-theme-toggle title="切换主题">
+        <svg class="i-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2v2.4M12 19.6V22M2 12h2.4M19.6 12H22M5 5l1.7 1.7M17.3 17.3 19 19M19 5l-1.7 1.7M6.7 17.3 5 19"/></svg>
+        <svg class="i-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.5 14.3A8.6 8.6 0 0 1 9.7 3.5a8.6 8.6 0 1 0 10.8 10.8z"/></svg>
+      </button>
+      <button class="iconbtn nav__burger" type="button" data-burger aria-expanded="false" aria-controls="nav-links" aria-label="菜单">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<section class="sect sect--tight" style="padding-bottom:0">
+  <div class="wrap">
+    <h1 class="h-sect h-sect--free" style="font-size:clamp(28px,4vw,44px)">资源中心</h1>
+    <p class="lead">模组 · 光影 · 材质包，搜索即装。数据来自 Modrinth，免 API Key。</p>
+  </div>
+</section>
+
+<section class="sect">
+  <div class="wrap">
+    <div class="grid g3">
+      <div class="card">
+        <h3 class="bar-title">模组</h3>
+        <p>搜索 Modrinth 上的模组，按当前 MC 版本过滤，点下载自动装到 mods 目录。</p>
+      </div>
+      <div class="card">
+        <h3 class="bar-title">光影</h3>
+        <p>光影包搜索下载，自动放到 shaderpacks 目录，进游戏直接选。</p>
+      </div>
+      <div class="card">
+        <h3 class="bar-title">材质包</h3>
+        <p>材质包搜索下载，自动放到 resourcepacks 目录。</p>
+      </div>
+    </div>
+
+    <div class="card" style="margin-top:24px">
+      <h3 class="bar-title">添加 URL</h3>
+      <p>站外资源直接粘贴直链下载，也会自动归到对应目录。</p>
+    </div>
+  </div>
+</section>
+
+<section class="sect sect--alt">
+  <div class="wrap">
+    <figure class="shot" style="max-width:900px;margin:0 auto">
+      <img src="assets/img/dark_resource.png" width="1440" height="900" alt="资源中心界面" loading="lazy">
+    </figure>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <div class="foot__in">
+      <div class="foot__about">
+        <a class="brand" href="index.html" style="margin-bottom:14px">
+          <svg class="brand__mark" viewBox="0 0 100 100" aria-hidden="true">
+            <path d="M50 4 92 28v44L50 96 8 72V28z" fill="#4CBB2F"/>
+            <path d="M36 30h30v11H48v9h16v11H48v19H36z" fill="#fff"/>
+          </svg>
+          <span class="brand__txt"><span class="brand__name">FLC 启动器</span><span class="brand__ver">v2.1.0</span></span>
+        </a>
+        <p>Minecraft 启动器。</p>
+      </div>
+      <div>
+        <h4>导航</h4>
+        <ul>
+          <li><a href="index.html">首页</a></li>
+          <li><a href="features.html">功能</a></li>
+          <li><a href="download.html">下载</a></li>
+          <li><a href="about.html">关于</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>相关</h4>
+        <ul>
+          <li><a href="https://modrinth.com" target="_blank" rel="noopener noreferrer">Modrinth</a></li>
+          <li><a href="https://bmclapi2.bangbang93.com" target="_blank" rel="noopener noreferrer">BMCLAPI</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot__legal">
+      <p>Minecraft 是 Mojang Studios 的商标，本程序与 Mojang 及微软无隶属关系。</p>
+      <p>© 2026 FLC Launcher</p>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
